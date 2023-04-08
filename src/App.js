@@ -6,7 +6,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
 import AboutSchool from './AboutSchool';
-import Login from './Login';
+import Home from './Home';
+//import Login from './Login';
 import RegistrationForm from './RegistationForm';
 function App() {
   return (
@@ -30,12 +31,14 @@ function App() {
           <Route path="/about">
             <AboutSchool />
           </Route>
+         
           <Route path="/registration">
             <RegistrationForm />
           </Route>
+          
           <Route path="/">
-            <h1>Welcome to our Elementary School Application Portal</h1>
-            {/* Add other components here, such as a form, calendar, and resource library */}
+            
+        <Home />
           </Route>
          
         </Switch>
